@@ -50,8 +50,8 @@ npm run typecheck  # tsc --noEmit
   2. The Wedding Ceremony — 25 NOVEMBER, 10:00 AM (emerald accent)
   3. Reception — 25 NOVEMBER, 7:30 PM (gold/emerald accent)
 - **Families:**
-  - Groom — **Family of Roop**, Mr. & Mrs. Lala: Abhijit (Father), Ruby (Mother), Neha (Sister), Son of Ruby Lala.
-  - Bride — **Family of Dhvani**, Mr. & Mrs. Shah: Atul (Father), Sonal (Mother), Manan (Brother), Daughter of Reena Shah.
+  - Groom — **Family of Roop**, Mr. & Mrs. Lala: Abhijit (Father), Ruby (Mother), Neha (Sister).
+  - Bride — **Family of Dhvani**, Mr. & Mrs. Shah: Atul (Father), Sonal (Mother), Manan (Brother).
 - **Story chapters:** 2020 Serendipitous Meeting · 2022 Falling in Step · 2023 A Question of Forever · 2026 Two Worlds, One Family · 2026 The Celebration Begins. Note two chapters share `year: "2026"` → the map uses `key={i}`, not the year.
 
 ## Design System
