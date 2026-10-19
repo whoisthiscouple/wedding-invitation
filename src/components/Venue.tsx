@@ -1,9 +1,14 @@
 import { motion } from "framer-motion";
 import Divider from "./Divider";
 
-const address = "Venue details to be announced";
-const mapLocation = "Adajan, Surat, Gujarat";
-const mapsQuery = encodeURIComponent(mapLocation);
+const venueName = "Royal Dine - Marigold Banquet Hall";
+const addressLines = [
+  "Opp. Madhav Atria, Nr. Bagban Kratos Circle",
+  "Green City Road, Gaurav Path Road",
+  "Pal Gam, Surat, Gujarat 394510",
+];
+const mapsLink = "https://maps.app.goo.gl/wgYTZNaFMAM4KJS56";
+const mapEmbed = "https://www.google.com/maps?cid=8038964498943690728&z=17&output=embed";
 
 export default function Venue() {
   return (
@@ -26,18 +31,18 @@ export default function Venue() {
             <div className="relative z-10 grid gap-10 md:grid-cols-2 md:items-center">
               <div>
                 <span className="font-label text-xs tracking-[0.4em] text-gold">WEDDING DINNER</span>
-                <h3 className="font-display mt-2 text-3xl text-charcoal md:text-4xl">Celebration Venue</h3>
+                <h3 className="font-display mt-2 text-3xl text-charcoal md:text-4xl">{venueName}</h3>
                 <p className="font-body mt-3 text-lg leading-relaxed text-charcoal-light/80">
-                  {address}
-                </p>
-                <p className="font-body mt-4 text-base text-charcoal-light/70">
-                  Further details, including the venue name, address, and directions, will appear here closer to the date.
-                  But rest assured, it’s happening in Surat!
+                  {addressLines.map((line) => (
+                    <span key={line} className="block">
+                      {line}
+                    </span>
+                  ))}
                 </p>
 
                 <div className="mt-6 flex flex-wrap gap-3">
                   <a
-                    href={`https://www.google.com/maps/search/?api=1&query=${mapsQuery}`}
+                    href={mapsLink}
                     target="_blank"
                     rel="noreferrer"
                     className="font-label rounded-full bg-emerald px-6 py-3 text-[0.6rem] tracking-[0.3em] text-warmwhite shadow-md transition-transform hover:scale-105"
@@ -50,7 +55,7 @@ export default function Venue() {
               <div className="relative h-72 overflow-hidden border-4 border-warmwhite shadow-lg md:h-96">
                 <iframe
                   title="Venue map"
-                  src={`https://www.google.com/maps?q=${mapsQuery}&output=embed`}
+                  src={mapEmbed}
                   className="h-full w-full"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"

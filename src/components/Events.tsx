@@ -9,6 +9,8 @@ interface EventItem {
   details?: string[];
   script?: string;
   footnote?: string;
+  venue?: string;
+  venueUrl?: string;
   accent: string;
 }
 
@@ -21,6 +23,8 @@ const events: EventItem[] = [
     details: ["Theme: Sunshine and Spritz"],
     script: "For a very special few ✨",
     footnote: "Our bridesmaids will reach out with where to be and what to wear. 💌",
+    venue: "18.19 Cafe",
+    venueUrl: "https://maps.app.goo.gl/n1HtXQ8fAhjMSs1o6",
     accent: "from-maroon-light/40 to-gold/10",
   },
   {
@@ -28,6 +32,8 @@ const events: EventItem[] = [
     time: "7:30 PM",
     label: "4 DECEMBER",
     description: "An evening of celebration — good food, warm conversations, laughter, and memories to cherish for years to come.",
+    venue: "Royal Dine - Marigold Banquet Hall",
+    venueUrl: "https://maps.app.goo.gl/wgYTZNaFMAM4KJS56",
     accent: "from-gold/40 to-emerald/10",
   },
 ];
@@ -77,6 +83,23 @@ export default function Events() {
                   <p className="font-label mt-4 border-t border-gold/15 pt-4 text-[0.6rem] leading-relaxed tracking-[0.12em] text-charcoal-light/60">
                     {event.footnote}
                   </p>
+                )}
+                {event.venue && (
+                  <div className="mt-4 border-t border-gold/15 pt-4">
+                    <span className="font-label text-[0.5rem] tracking-[0.3em] text-gold">VENUE</span>
+                    {event.venueUrl ? (
+                      <a
+                        href={event.venueUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="font-body mt-1 block text-base text-charcoal underline decoration-gold/40 underline-offset-4 transition-colors hover:text-emerald"
+                      >
+                        {event.venue}
+                      </a>
+                    ) : (
+                      <p className="font-body mt-1 text-base text-charcoal">{event.venue}</p>
+                    )}
+                  </div>
                 )}
                 <div className="mt-6 flex items-center gap-2 text-gold">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">

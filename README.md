@@ -1,6 +1,6 @@
 # wedding-invitation
 
-Interactive wedding invitation for Roop & Dhvani — 25 November 2026.
+Interactive wedding invitation for Roop & Dhvani — 4 December 2026.
 React 19 + TypeScript + Vite 7 + Tailwind CSS 4 + Framer Motion.
 
 Live site: https://whoisthiscouple.github.io/wedding-invitation/

@@ -354,6 +354,18 @@ export default function EnvelopeIntro({ onComplete }: EnvelopeIntroProps) {
                         <span className="text-gold-shine">Join us as we say forever.</span>
                       </p>
 
+                      <div className="intro-venue">
+                        <span className="intro-venue-label">THE VENUE</span>
+                        <p className="intro-venue-name">Royal Dine - Marigold Banquet Hall</p>
+                        <p className="intro-venue-address">
+                          Opp. Madhav Atria, Nr. Bagban Kratos Circle
+                          <br />
+                          Green City Road, Gaurav Path Road
+                          <br />
+                          Pal Gam, Surat, Gujarat 394510
+                        </p>
+                      </div>
+
                       <motion.div
                         className="intro-paper-cta"
                         initial={{ opacity: 0 }}

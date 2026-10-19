@@ -1,7 +1,7 @@
 # CLAUDE.md — Roop & Dhvani Wedding Invite
 
 ## Project Overview
-Single-page wedding invitation site for **Roop Lala** (groom) & **Dhvani Shah** (bride), married **25 November 2026**.
+Single-page wedding invitation site for **Roop Lala** (groom) & **Dhvani Shah** (bride), married **4 December 2026**.
 Premium "dark garden reveal" intro (envelope opens into a paper invitation), then a full scrolling site (story, events, countdown, families, gallery, venue, RSVP, finale). Deployed to GitHub Pages.
 
 **Stack:** React 19 + TypeScript + Vite 7 + Tailwind CSS 4 (CSS-first `@theme`) + Framer Motion.
@@ -44,11 +44,11 @@ npm run typecheck  # tsc --noEmit
 > Reference design project lives in the sibling folder `../reveal-animation` (own Vite app). The intro was adapted from it and recolored to this site's palette — when the reference is updated, port those changes.
 
 ## Couple / Event Facts
-- **Wedding date:** 25 November 2026 (Countdown uses `2026-11-25T00:00:00+05:30`).
+- **Wedding date:** 4 December 2026 (Countdown uses `2026-12-04T00:00:00+05:30`).
 - **Events:**
-  1. Bridal Shower — 24 NOVEMBER, 4:00 PM (maroon/gold accent)
-  2. The Wedding Ceremony — 25 NOVEMBER, 10:00 AM (emerald accent)
-  3. Reception — 25 NOVEMBER, 7:30 PM (gold/emerald accent)
+  1. Bridal Shower — 3 DECEMBER, 4:00 PM (maroon/gold accent)
+  2. The Wedding Ceremony — 4 DECEMBER, 10:00 AM (emerald accent)
+  3. Reception — 4 DECEMBER, 7:30 PM (gold/emerald accent)
 - **Families:**
   - Groom — **Family of Roop**, Mr. & Mrs. Lala: Abhijit (Father), Ruby (Mother), Neha (Sister).
   - Bride — **Family of Dhvani**, Mr. & Mrs. Shah: Atul (Father), Sonal (Mother), Manan (Brother).
@@ -94,7 +94,7 @@ npm run typecheck  # tsc --noEmit
 ### Revealed scene
 - Envelope unfolds (flap `rotateX 180`, backface hidden); paper card rises.
 - Paper (`intro-paper`): ivory, gold inner frame, corner L-markers, emboss pattern. **No** green leaf emboss at top/bottom anymore (removed).
-- Content: logo → "Together with Their Families" → **Roop & Dhvani** (maroon, `.text-gold-shine` initials, `white-space: nowrap`, `clamp(2.2rem,6.5vw,2.9rem)` so it never wraps) → "request the pleasure of your company" → date "25 — NOVEMBER — 2026" → "Celebration Venue / details to be announced".
+- Content: logo → "Together with Their Families" → **Roop & Dhvani** (maroon, `.text-gold-shine` initials, `white-space: nowrap`, `clamp(2.2rem,6.5vw,2.9rem)` so it never wraps) → "request the pleasure of your company" → date "4 — DECEMBER — 2026" → "Celebration Venue / details to be announced".
 - Enter button: **borderless** (no `.btn-reveal`) → `.intro-enter-btn`; hover = gold underline sweeping from left + arrow nudging up-right + text shifts maroon.
 - Caption: *"An invitation, made with love."*
 

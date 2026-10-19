@@ -416,8 +416,8 @@ body {
 .intro-paper {
   position: relative;
   z-index: 2;
-  width: min(78vw, 390px);
-  min-height: min(72svh, 570px);
+  width: min(80vw, 410px);
+  min-height: min(78svh, 630px);
   overflow: hidden;
   display: grid;
   place-items: center;
@@ -470,7 +470,7 @@ body {
   margin: 0 0 0.5rem;
   max-width: 30em;
   color: var(--color-gold-dark);
-  font: 500 7.5px/1.8 var(--font-label);
+  font: 500 8.5px/1.8 var(--font-label);
   letter-spacing: 0.24em;
   text-wrap: balance;
 }
@@ -495,7 +495,7 @@ body {
 .intro-copy {
   margin: 0.7rem 0;
   color: rgba(85, 85, 85, 0.85);
-  font: italic 15px/1.5 var(--font-body);
+  font: italic 17px/1.5 var(--font-body);
 }
 .intro-rule {
   display: flex;
@@ -516,22 +516,49 @@ body {
 .intro-date {
   margin: 0;
   color: var(--color-emerald);
-  font: 500 9px/1.5 var(--font-label);
+  font: 500 11px/1.5 var(--font-label);
   letter-spacing: 0.32em;
 }
 .intro-place {
   margin: 0.95rem 0 0;
   color: var(--color-charcoal);
-  font: 400 19px/1.15 var(--font-display);
+  font: 400 21px/1.15 var(--font-display);
   letter-spacing: -0.02em;
 }
 .intro-place span {
   display: block;
   margin-top: 0.35rem;
   color: rgba(85, 85, 85, 0.75);
-  font: 400 8px/1.7 var(--font-label);
+  font: 400 9.5px/1.7 var(--font-label);
   letter-spacing: 0.22em;
   text-transform: uppercase;
+}
+.intro-venue {
+  width: 100%;
+  max-width: 24rem;
+  margin: 1.2rem auto 0;
+  padding-top: 1.05rem;
+  border-top: 1px solid rgba(160, 126, 26, 0.28);
+  text-wrap: balance;
+}
+.intro-venue-label {
+  display: block;
+  color: var(--color-gold-dark);
+  font: 500 8.5px/1 var(--font-label);
+  letter-spacing: 0.34em;
+}
+.intro-venue-name {
+  margin: 0.5rem 0 0;
+  color: var(--color-maroon);
+  font: 400 18px/1.25 var(--font-display);
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+.intro-venue-address {
+  margin: 0.35rem 0 0;
+  color: rgba(85, 85, 85, 0.8);
+  font: 400 11.5px/1.6 var(--font-body);
+  text-wrap: balance;
 }
 .intro-paper-cta {
   display: flex;
@@ -552,7 +579,7 @@ body {
   background: transparent;
   cursor: pointer;
   color: var(--color-gold-dark);
-  font: 500 9px/1 var(--font-label);
+  font: 500 10.5px/1 var(--font-label);
   letter-spacing: 0.3em;
   transition: color 0.3s ease;
 }
@@ -593,7 +620,7 @@ body {
 .intro-tap-hint {
   margin: 0;
   color: rgba(85, 85, 85, 0.35);
-  font: 400 9px/1 var(--font-label);
+  font: 400 10px/1 var(--font-label);
   letter-spacing: 0.3em;
   text-transform: uppercase;
 }
@@ -607,11 +634,11 @@ body {
 
 @media (max-height: 760px) and (min-width: 640px) {
   .intro-paper {
-    min-height: 535px;
-    transform: scale(0.9);
+    min-height: 580px;
+    transform: scale(0.88);
     transform-origin: center bottom;
-    margin-top: -29px;
-    margin-bottom: -29px;
+    margin-top: -35px;
+    margin-bottom: -35px;
   }
   .intro-open-envelope {
     bottom: 1rem;
@@ -626,8 +653,15 @@ body {
     margin-bottom: 1.6rem;
   }
   .intro-paper {
-    min-height: min(68svh, 545px);
+    min-height: min(74svh, 600px);
     padding: 2.1rem 1.5rem 1.6rem;
+  }
+  .intro-venue-name {
+    font-size: 16.5px;
+  }
+  .intro-venue-address {
+    font-size: 11px;
+    line-height: 1.55;
   }
   .intro-open-envelope {
     bottom: 2rem;
@@ -653,6 +687,12 @@ body {
   .intro-hint {
     font-size: 13px;
   }
+  .intro-venue-name {
+    font-size: 15px;
+  }
+  .intro-venue-address {
+    font-size: 10.5px;
+  }
 }
 @media (max-height: 680px) {
   .intro-scroll {
@@ -675,10 +715,16 @@ body {
     margin-top: 1.1rem;
   }
   .intro-paper {
-    min-height: 500px;
-    transform: scale(0.83);
+    min-height: 545px;
+    transform: scale(0.8);
     transform-origin: center center;
-    margin: -47px 0;
+    margin: -68px 0;
+  }
+  .intro-venue-name {
+    font-size: 16px;
+  }
+  .intro-venue-address {
+    font-size: 10.5px;
   }
 }
 
